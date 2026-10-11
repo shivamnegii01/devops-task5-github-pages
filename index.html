@@ -4,17 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shivam Singh Negi's developer portfolio showcasing DevOps, AWS, Docker, Jenkins, and Kubernetes projects.">
     <title>Shivam Negi | DevOps Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar container">
             <a href="#" class="logo">Shivam<span>.</span></a>
-
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow">HELLO, WORLD! I'M</p>
+                <h1>Shivam Singh Negi</h1>
+                <h2>DevOps &amp; Cloud Enthusiast</h2>
+                <p class="intro">
+                    I enjoy automating workflows, building CI/CD pipelines,
+                    containerizing applications, and deploying projects on AWS.
+                    I'm continuously learning and building practical DevOps projects.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">Explore Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/shivamnegii01" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="terminal-bar">
+                    <span></span><span></span><span></span>
+                    <p>devops.sh</p>
+                </div>
+                <div class="terminal-content">
+                    <p><span class="purple">$</span> whoami</p>
+                    <h3>DevOps Learner</h3>
+                    <p><span class="purple">$</span> skills --list</p>
+                    <ul>
+                        <li>AWS Cloud</li>
+                        <li>Docker</li>
+                        <li>Jenkins &amp; CI/CD</li>
+                        <li>Kubernetes</li>
+                        <li>Linux &amp; Git</li>
+                    </ul>
+                    <p class="terminal-success">Always learning and improving</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card">
+                <p>
+                    I'm a DevOps-focused MCA student with a BCA background and
+                    hands-on experience in AWS, Docker, Jenkins, Linux, and CI/CD
+                    automation. During my DevOps internship, I gained practical
+                    experience supporting cloud infrastructure, deploying
+                    applications, and troubleshooting issues.
+                </p>
+                <p>
+                    My goal is to build reliable, automated, and scalable
+                    deployment workflows while developing my cloud and
+                    Kubernetes skills.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <p class="eyebrow">TOOLS I WORK WITH</p>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><span>☁️</span><h3>AWS</h3><p>EC2, S3, IAM, CloudFront</p></div>
+                <div class="skill-card"><span>🐳</span><h3>Docker</h3><p>Images, Containers, Compose</p></div>
+                <div class="skill-card"><span>⚙️</span><h3>CI/CD</h3><p>Jenkins, GitHub Actions</p></div>
+                <div class="skill-card"><span>🐧</span><h3>Linux &amp; Git</h3><p>Ubuntu, Git, GitHub</p></div>
+                <div class="skill-card"><span>☸️</span><h3>Kubernetes</h3><p>Deployments, Services, YAML</p></div>
+                <div class="skill-card"><span>💻</span><h3>Scripting</h3><p>Python, Bash fundamentals</p></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <p class="eyebrow">WHAT I'VE BEEN BUILDING</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">01 / CI/CD</div>
+                    <h3>Automated Deployment Pipeline</h3>
+                    <p>Automated application testing and Docker image building using GitHub Actions.</p>
+                    <div class="tags"><span>GitHub Actions</span><span>Docker</span><span>Node.js</span></div>
+                    <a href="https://github.com/shivamnegii01" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-number">02 / JENKINS</div>
+                    <h3>Jenkins CI/CD Pipeline</h3>
+                    <p>Built a Jenkins pipeline to test an application, build a Docker image, and deploy a container.</p>
+                    <div class="tags"><span>Jenkins</span><span>Docker</span><span>AWS EC2</span></div>
+                    <a href="https://github.com/shivamnegii01" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-number">03 / INFRASTRUCTURE</div>
+                    <h3>Terraform with Docker</h3>
+                    <p>Provisioned a Docker container using Terraform to practise infrastructure as code.</p>
+                    <div class="tags"><span>Terraform</span><span>Docker</span><span>IaC</span></div>
+                    <a href="https://github.com/shivamnegii01/devops-task3-terraform-docker" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-number">04 / KUBERNETES</div>
+                    <h3>Containerized Chat Application</h3>
+                    <p>Practised Kubernetes deployments and service manifests for a full-stack chat application.</p>
+                    <div class="tags"><span>Kubernetes</span><span>Docker</span><span>YAML</span></div>
+                    <a href="https://github.com/shivamnegii01/full-stack_chatApp" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <div class="contact-card">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2 class="section-title">Have an opportunity?</h2>
+                <p>I'm interested in DevOps, cloud, and infrastructure opportunities where I can learn and contribute.</p>
+                <a class="btn primary-btn" href="https://github.com/shivamnegii01" target="_blank" rel="noopener noreferrer">Connect on GitHub ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Shivam Singh Negi · Built with HTML &amp; CSS</p>
+        <p>Deployed with GitHub Pages 🚀</p>
+    </footer>
+</body>
+</html>
